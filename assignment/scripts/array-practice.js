@@ -88,20 +88,26 @@ let index = favoriteFoods.indexOf('bahn mi');
 if(~index){
     favoriteFoods[index] = 'burgers';
 }
- console.log(favoriteFoods)  
+ console.log(favoriteFoods);  
  // So upon digging some mor;e I think it might have been more elegant to use spice or maybe just a for loop? -Stephen
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-favoriteFoods.sort()
-favoriteFoods.reverse();
+favoriteFoods.sort().reverse();
 console.log(favoriteFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+
+console.log(favoriteFoods.join(' and '));
+
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+let combinedArrays = [...favoriteFoods,...animalArray];
+console.log(combinedArrays);
